@@ -1,2 +1,1 @@
 # Bootcamp-SQL
-# Bootcamp-SQL
