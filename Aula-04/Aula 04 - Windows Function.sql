@@ -126,4 +126,3 @@ FROM
 JOIN 
   shippers ON shippers.shipper_id = orders.ship_via;
 
-

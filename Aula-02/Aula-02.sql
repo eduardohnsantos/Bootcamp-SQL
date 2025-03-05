@@ -233,3 +233,4 @@ Exemplo de SUM() com GROUP BY
 SELECT order_id, SUM(quantity) AS quantidade_total_por_pedido
 FROM order_details
 GROUP BY order_id;
+
