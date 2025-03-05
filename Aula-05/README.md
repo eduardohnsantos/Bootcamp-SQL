@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Relatórios Avançados em SQL Northwind
 
 ## Objetivo
