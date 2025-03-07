@@ -1,5 +1,5 @@
 -- Criação de um TRIGGER
-CREATE OR REPLACE FUNCTION verifica_estoque() RETURNS TRIGGER AS $$
+CREATE OR REPLACE FUNCTION func_verifica_estoque() RETURNS TRIGGER AS $$
 DECLARE
     qted_atual INTEGER;
 BEGIN
@@ -18,7 +18,7 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trg_verifica_estoque 
 BEFORE INSERT ON RegistroVendas
 FOR EACH ROW 
-EXECUTE FUNCTION verifica_estoque();
+EXECUTE FUNCTION func_verifica_estoque();
 
 -- Tentativa de venda de 5 unidades de Basico (deve ser bem-sucedida, pois há 10 unidades disponíveis)
 INSERT INTO RegistroVendas (cod_prod, qtde_vendida) VALUES (1, 5);
